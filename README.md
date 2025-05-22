@@ -1,4 +1,4 @@
-# Razor Pages Filmes - Um CRUD com ASP.NET MVC#
+# Razor Pages Filmes - Um CRUD com ASP.NET MVC
 
 Este projeto é um CRUD de filmes utilizando ASP.NET MVC e páginas Razor, fazendo parte do meu aprendizado em C# e ASP.NET e ASP.NET MVC. Este projeto é uma versão levemente diferente do RazorFilmes2025 (https://github.com/WesllenWorld/crud-filmes-asp.net).
 
