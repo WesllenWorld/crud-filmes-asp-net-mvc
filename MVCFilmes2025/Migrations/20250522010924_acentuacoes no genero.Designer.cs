@@ -4,6 +4,7 @@ using MVCFilmes2025.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVCFilmes2025.Migrations
 {
     [DbContext(typeof(MVCFilmes2025Context))]
-    partial class MVCFilmes2025ContextModelSnapshot : ModelSnapshot
+    [Migration("20250522010924_acentuacoes no genero")]
+    partial class acentuacoesnogenero
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
