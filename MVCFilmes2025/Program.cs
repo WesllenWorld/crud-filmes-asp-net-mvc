@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using MVCFilmes2025.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<MVCFilmes2025Context>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("MVCFilmes2025Context") ?? throw new InvalidOperationException("Connection string 'MVCFilmes2025Context' not found.")));
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
